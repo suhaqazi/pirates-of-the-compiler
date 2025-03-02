@@ -12,7 +12,7 @@ const Login = () => {
       style={{
         margin: 0,
         fontFamily: 'Arial, sans-serif',
-        backgroundImage: "url('background.jpg')", // Replace with your image path
+        backgroundImage: "url('background.jpg')", 
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: '100vh',
