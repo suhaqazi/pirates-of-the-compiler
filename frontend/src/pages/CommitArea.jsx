@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 
 const Avatar1 = "/girl.png";
 const Avatar2 = "/boy.png";
@@ -22,7 +23,7 @@ const CommitArea = () => {
       setDeadlineInputUser1("");
     }
   };
-
+  
   const addTaskUser2 = () => {
     if (taskInputUser2.trim() !== "" && deadlineInputUser2) {
       setTasksUser2([
@@ -33,10 +34,23 @@ const CommitArea = () => {
       setDeadlineInputUser2("");
     }
   };
-
+  useEffect(() => {
+    console.log("Tasks User 1:", tasksUser1);
+    console.log("Tasks User 2:", tasksUser2);
+  }, [tasksUser1, tasksUser2]);
+  
   return (
-    
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-6">
+  <div 
+style={{ 
+  minHeight: '100vh', 
+  display: 'flex', 
+  justifyContent: 'center', 
+  alignItems: 'center', 
+  backgroundColor: 'lightblue',
+  width:"189vh",
+}}
+>
+<div className="min-h-screen flex items-center justify-center bg-blue-100 p-6">
       {/* Two sections for User 1 and User 2 */}
       <div className="grid grid-cols-2 gap-12 w-full max-w-4xl">
         {/* User 1 Section */}
@@ -48,7 +62,7 @@ const CommitArea = () => {
             alt="Charlotte"
             className="w-24 h-24 rounded-full shadow-lg"
           />
-          <h2 className="text-lg font-bold mt-2 text-gray-700">Charlotte</h2>
+          <h2 className="text-lg font-bold mt-2 text-black-1000">Charlotte</h2>
 
           {/* Task Input */}
           <div className="flex gap-2 mt-4 w-full">
@@ -99,7 +113,7 @@ const CommitArea = () => {
             alt="Grayson"
             className="w-24 h-24 rounded-full shadow-lg"
           />
-          <h2 className="text-lg font-bold mt-2 text-gray-700">Grayson</h2>
+          <h2 className="text-lg font-bold mt-2 text-regal-blue">Grayson</h2>
 
           {/* Task Input */}
           <div className="flex gap-2 mt-4 w-full">
@@ -142,6 +156,7 @@ const CommitArea = () => {
         </div>
       </div>
     </div>
+</div>
   );
 };
 
