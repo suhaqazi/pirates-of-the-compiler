@@ -4,6 +4,7 @@ import axios from "axios";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Invite from "./pages/Invite";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -29,6 +30,7 @@ function App() {
         <Route path="/" element={<Home count={count} setCount={setCount} array={array} />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/invite" element={<Invite />} />
       </Routes>
     </Router>
   );
