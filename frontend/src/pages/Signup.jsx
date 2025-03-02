@@ -8,7 +8,6 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your signup logic here (e.g., API call)
     console.log('Signup data:', { username, email, password });
   };
 
