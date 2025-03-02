@@ -1,13 +1,43 @@
-import { Link } from "react-router-dom";
-
 const Home = () => {
+
+  const handleButtonClick = () => {
+    window.location.href = './login'; 
+  };
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white">
-      <h1 className="text-4xl font-bold">Welcome to the Accountability Tracker</h1>
-      <p className="mt-4">Stay on track with your studies and assignments!</p>
-      <Link to="/signup" className="mt-6 px-4 py-2 bg-yellow-500 rounded-lg">Get Started</Link>
+    <div style={styles.container}>
+      <h1 style={styles.heading}>Welcome to Hot Plates!</h1>
+      <button style={styles.button} onClick={handleButtonClick}>
+        Begin !
+      </button>
     </div>
   );
+};
+
+const styles = {
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+    width: '189vh',
+    backgroundColor: '#1A1A2E',
+  },
+  heading: {
+    fontSize: '4rem',
+    color: '#FFFFFF',
+    marginBottom: '35px',
+  },
+  button: {
+    padding: '12px 40px',
+    backgroundColor: '#C95B7B',
+    color: 'white',
+    border: 'white',
+    borderRadius: '6.5px',
+    cursor: 'pointer',
+    fontSize: '1.5rem',
+  },
 };
 
 export default Home;

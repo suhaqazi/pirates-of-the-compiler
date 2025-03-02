@@ -25,12 +25,6 @@ function App() {
 
   return (
     <Router>
-      <nav className="flex justify-center space-x-4 p-4 bg-gray-800 text-white">
-        <Link to="/" className="px-3 py-2 rounded bg-blue-500">Home</Link>
-        <Link to="/login" className="px-3 py-2 rounded bg-green-500">Login</Link>
-        <Link to="/signup" className="px-3 py-2 rounded bg-yellow-500">Signup</Link>
-      </nav>
-
       <Routes>
         <Route path="/" element={<Home count={count} setCount={setCount} array={array} />} />
         <Route path="/login" element={<Login />} />
