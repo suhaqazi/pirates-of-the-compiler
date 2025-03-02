@@ -8,6 +8,13 @@
     body {
       margin: 0;
       font-family: 'Arial', sans-serif;
+      background-image: url('background.jpg'); /* Replace with your GIF's name */
+      background-size: cover; /* Cover the entire viewport */
+      background-position: center; /* Center the GIF */
+      height: 100vh; /* Ensure the body takes up the full viewport height */
+      display: flex; /* Use flexbox to center the login container */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
     }
 
     .login-container {
@@ -15,29 +22,27 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: url('background.jpg'); /* Path to your image */
-      background-size: cover;
-      background-position: center;
     }
 
     .login-box {
-      background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+      background-color: rgba(32, 15, 60, 0.9); /* Slightly transparent white */
       padding: 2rem;
       border-radius: 12px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
       width: 24rem; /* 384px */
+      
     }
 
     .login-box h1 {
-      color: #333;
+      color: #eeeeee;
       text-align: center;
-      font-size: 3rem;
+      font-size: 2em;
       font-weight: bold;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5em;
     }
 
     .login-box p {
-      color: #666;
+      color: #c9b9f0;
       text-align: center;
       margin-bottom: 2rem;
     }
@@ -47,7 +52,7 @@
       width: 100%;
       padding: 12px;
       border-radius: 8px;
-      border: 1px solid #ccc;
+      border:  solid #ccc;
       box-sizing: border-box;
       margin-bottom: 16px;
       transition: border-color 0.3s;
@@ -55,33 +60,33 @@
 
     input[type="email"]:focus,
     input[type="password"]:focus {
-      border-color: #4c51bf;
+      border-color: #000000;
       outline: none;
     }
 
     button {
       width: 100%;
-      padding: 12px;
-      background-color: #4c51bf;
+      padding: 0.75em;
+      background-color: #870379;
       border: none;
       color: white;
-      border-radius: 8px;
-      font-size: 1.125rem;
+      border-radius: 0.5em;
+      font-size: 1.125em;
       cursor: pointer;
       transition: background-color 0.3s;
     }
 
     button:hover {
-      background-color: #434190;
+      background-color: #a23e76;
     }
 
     button:active {
-      background-color: #3c3a81;
+      background-color: #211f60;
     }
 
     a {
       text-decoration: none;
-      color: #4c51bf;
+      color: lightblue;
     }
 
     a:hover {
@@ -91,7 +96,7 @@
     label {
       display: block;
       margin-bottom: 5px;
-      color: #333;
+      color: lightblue;
       font-weight: bold;
     }
   </style>
@@ -121,5 +126,7 @@
       </div>
     </div>
   </div>
+</body>
+<body background="background.jpg">
 </body>
 </html>

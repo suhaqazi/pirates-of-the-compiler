@@ -1,4 +1,5 @@
 const Login = () => {
+    
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white">
         <div className="bg-white p-8 rounded-lg shadow-xl w-96">
@@ -41,5 +42,6 @@ const Login = () => {
       </div>
     );
   };
+
   
   export default Login;
