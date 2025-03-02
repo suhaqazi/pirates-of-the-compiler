@@ -11,6 +11,10 @@ const Signup = () => {
     console.log('Signup data:', { username, email, password });
   };
 
+  const handleButtonClick = () => {
+    window.location.href = './invite'; 
+  };
+
   return (
     <div
       style={{
@@ -155,21 +159,20 @@ const Signup = () => {
             </div>
 
             <button
-              type="submit"
-              style={{
-                width: '100%',
-                padding: '0.75em',
-                backgroundColor: '#870379',
-                border: 'none',
-                color: 'white',
-                borderRadius: '0.5em',
-                fontSize: '1.125em',
-                cursor: 'pointer',
-                transition: 'background-color 0.3s',
-              }}
-            >
-              Sign Up
-            </button>
+            type="submit"
+            style={{
+              width: '100%',
+              padding: '0.75em',
+              backgroundColor: '#870379',
+              border: 'none',
+              color: 'white',
+              borderRadius: '0.5em',
+              fontSize: '1.125em',
+              cursor: 'pointer',
+              transition: 'background-color 0.3s',
+            }} onClick={handleButtonClick}>
+            <Link to="/invite" className="text-white hover:underline">Sign Up</Link>
+          </button>
           </form>
 
           <div style={{ textAlign: 'center', marginTop: '1rem' }}>

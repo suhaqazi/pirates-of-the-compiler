@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Login = () => {
     
     const handleButtonClick = () => {
-        window.location.href = './signup'; 
+        window.location.href = './invite'; 
       };
 
   return (
@@ -129,9 +129,8 @@ const Login = () => {
                 fontSize: '1.125em',
                 cursor: 'pointer',
                 transition: 'background-color 0.3s',
-              }}>
-              <Link to="/invite" className="text-white hover:underline">Login
-                    </Link>
+              }} onClick={handleButtonClick}>
+              <Link to="/invite" className="text-white hover:underline">Login</Link>
 
             </button>
             

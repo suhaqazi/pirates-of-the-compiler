@@ -37,9 +37,6 @@ const Invite = () => {
       ([username, status]) => status === "accepted"
     );
 
-    if (acceptedRequest) {
-      navigate("/money");
-    }
   }, [requests, navigate]);
 
   return (
@@ -143,7 +140,7 @@ const Invite = () => {
                 }}
               />
 
-              <div style={{ maxHeight: "22em", overflowY: "auto" }}>
+              <div style={{ maxHeight: "22em", overflow: "auto" }}>
                 <ul>
                   {filteredUsernames.map((username) => (
                     <li
@@ -160,7 +157,7 @@ const Invite = () => {
 
                       {requests[username] === "pending" ? (
                         <button onClick={() => handleAcceptRequest(username)}>
-                          Accept
+                          Pending
                         </button>
                       ) : requests[username] === "accepted" ? (
                         <span style={{ color: "green" }}>Accepted</span>
@@ -171,9 +168,13 @@ const Invite = () => {
                       )}
                     </li>
                   ))}
+                  
                 </ul>
               </div>
             </div>
+            <Link to="/money" style={{color: "#eeeeee", textDecorationStyle:"solid"}}>
+            Done
+          </Link>
           </div>
         </div>
       </div>
