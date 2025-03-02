@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useNavigate, Link } from "react-router-dom";
 
 const Invite = () => {
+  const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
   const [requests, setRequests] = useState({});
 
@@ -30,6 +31,16 @@ const Invite = () => {
       [username]: "accepted",
     });
   };
+
+  useEffect(() => {
+    const acceptedRequest = Object.entries(requests).find(
+      ([username, status]) => status === "accepted"
+    );
+
+    if (acceptedRequest) {
+      navigate("/money");
+    }
+  }, [requests, navigate]);
 
   return (
     <div>
