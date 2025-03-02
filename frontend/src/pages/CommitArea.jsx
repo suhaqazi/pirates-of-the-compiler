@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-const Avatar1 = "/girlAvatar.png";
-const Avatar2 = "/boyAvatar.png";
+const Avatar1 = "/girl.png";
+const Avatar2 = "/boy.png";
 
 const CommitArea = () => {
   const [tasksUser1, setTasksUser1] = useState([]);
@@ -35,6 +35,7 @@ const CommitArea = () => {
   };
 
   return (
+    
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-6">
       {/* Two sections for User 1 and User 2 */}
       <div className="grid grid-cols-2 gap-12 w-full max-w-4xl">
