@@ -13,8 +13,7 @@ const Money = () => {
     // Simulate storing the transfer amount (replace with actual logic)
     localStorage.setItem('transferAmount', transferAmount);
 
-    // Navigate to the Aim page
-    navigate('/aim');
+    navigate('/commitarea');
   };
 
   return (
