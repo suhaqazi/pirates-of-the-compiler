@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Invite from "./pages/Invite";
+import Money from './pages/Money';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -31,6 +32,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/invite" element={<Invite />} />
+        <Route path="/money" element={<Money />} /> 
       </Routes>
     </Router>
   );
