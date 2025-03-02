@@ -8,7 +8,6 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your signup logic here (e.g., API call)
     console.log('Signup data:', { username, email, password });
   };
 
@@ -17,11 +16,11 @@ const Signup = () => {
       style={{
         margin: 0,
         fontFamily: 'Arial, sans-serif',
-        backgroundImage: "url('background.jpg')", // Replace with your image path
+        backgroundImage: "url('background.jpg')", 
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: '100vh',
-        width: '189vh', // Adjust width as needed
+        width: '189vh', 
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',

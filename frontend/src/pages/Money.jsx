@@ -22,7 +22,7 @@ const Money = () => {
       style={{
         margin: 0,
         fontFamily: 'Arial, sans-serif',
-        backgroundImage: "url('background.jpg')", // Replace with your actual background image path
+        backgroundImage: "url('background.jpg')", 
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: '100vh',
