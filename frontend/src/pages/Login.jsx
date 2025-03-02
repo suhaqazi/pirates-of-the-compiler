@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState} from 'react';
 import { Link } from 'react-router-dom';
 
 const Login = () => {
-
+    
     const handleButtonClick = () => {
         window.location.href = './signup'; 
       };
@@ -129,9 +129,10 @@ const Login = () => {
                 fontSize: '1.125em',
                 cursor: 'pointer',
                 transition: 'background-color 0.3s',
-              }}
-            >
-              Login
+              }}>
+              <Link to="/invite" className="text-white hover:underline">Login
+                    </Link>
+
             </button>
             
           </form>
